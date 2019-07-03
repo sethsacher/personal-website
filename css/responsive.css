@@ -1,0 +1,181 @@
+/*
+    Theme Responsive Design
+*/
+
+@media (max-width: 1024px) {
+	.download_moc img {
+		width: 88%;
+		top: -157px;
+		left: 0;
+	}
+}
+
+/* ---- Start of max-width 992px CSS ---- */
+@media (max-width: 992px) {
+    .hero_content{ padding: 125px 0; }
+    .hero_mock_2{ bottom: -260px; }
+    .about_mock{
+        top: 145px;
+        left: -45px;
+        width: 120%;
+    }
+    .feature_wrap{ padding: 0; }
+    .feature_mock{
+        padding: 85px 0;
+    }
+    .feature_mock img{
+        width: 100%;
+    }
+    .download_mock,
+    .feature_list span.circle{ display: none; }
+    .owl-nav div{
+        left: 10px;
+    }
+    .owl-nav div.owl-next{
+        right: 10px;
+    }
+    .dl_sec .col-sm-12{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* ---- End of max-width 992px CSS ---- */
+
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+}
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 767px CSS ---- */
+@media all and (max-width: 767px) {
+    body, p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .padding{
+        padding: 60px 0;
+    }
+    .xs-padding{
+    	padding: 15px;
+    }
+    .hero_content {
+        padding: 0;
+    }
+
+	.contact_form .form-group .col-sm-6:first-child{
+        margin-bottom: 15px;
+    }
+}
+/* ---- End of max-width 767px CSS ---- */
+
+
+/* ---- Start of max-width 480px CSS ---- */
+@media all and (max-width: 480px) {
+    .col-xs-6{
+        float: none;
+        width: 100%;
+    }
+    .subscribe_form{
+        display: block;
+        text-align: center;
+        width:100%;
+    }
+    .subscribe_form .submit {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .subscribe_form .form_input{ width: 100%; }
+
+}
+/* ---- End of max-width 480px CSS ---- */
+
+
+/* ---- Start of max-width 580px CSS ---- */
+@media all and (max-width: 580px) {
+    .testimonial_section,
+		.leadership_section,
+    .screenshot_section{
+        width: 380px;
+        margin: 0 auto;
+    }
+}
+/* ---- End of max-width 580px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+@media all and (max-width: 420px) {
+    .testimonial_section,
+		.leadership_section,
+    .screenshot_section{
+        width: 300px;
+        margin: 0 auto;
+    }
+	.btn_group a {
+        display: block;
+    }
+}
+/* ---- End of max-width 380px CSS ---- */
+
+/* Mobile Responsive */
+@media screen and (max-width: 500px) {
+	/* Hide Right Sidebar Nav */
+  #pp-nav {
+    visibility: hidden;
+  }
+	/* Change carousel nav arrows to white to show better on images */
+	.owl-nav div{
+		color: #fff;
+	}
+
+	.feature_wrap .section_heading {
+		margin-top: 75px;
+		margin-bottom: 0px;
+	}
+
+	.feature_list li {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.leadership_section .section_heading {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+}
+
+/* Owl Carousel images */
+/* .owlCarousel {
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        500:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+} */

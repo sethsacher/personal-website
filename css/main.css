@@ -1,0 +1,778 @@
+/*
+    Appland By AlexaTheme
+*/
+
+/*  ==========================================================================
+    Table of Contets
+    ==========================================================================
+
+    1.0 Common Styles
+    2.0 Hero Section
+    3.0 About Section
+    4.0 Feature Section
+    5.0 Screenshot Section
+    6.0 Testimonial Section
+    7.0 Download Section
+    8.0 Subscribe Section
+
+    ==========================================================================
+    Appland
+    ========================================================================== */
+
+	@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+/*  ==========================================================================
+    Common Styles
+    ========================================================================== */
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    color: #777;
+    font-weight: 300;
+    position: relative;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing:antialiased;
+	color: #444;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    color: #fff;
+    letter-spacing: -0.05em;
+}
+h2{
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+h3,h4{
+    margin: 0 0 10px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+h3{
+    font-size: 17px;
+}
+h4{
+    font-size: 15px;
+}
+h5,h6{
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+img{
+    border: none;
+    outline:none;
+}
+ul{
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p, li, a, span{}
+p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+a, a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: 0;
+    text-decoration: none;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+   color: #ddd !important;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder{ /* Firefox 18- */
+   color: #ddd !important;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder{  /* Firefox 19+ */
+   color: #ddd !important;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+   color: #ddd !important;
+}
+button{
+    border: none;
+}
+/* Helper Class */
+.padding{
+    padding: 80px 0;
+}
+.no-padding{
+    padding: 0;
+}
+/* Gradiant */
+.gradiant{
+    background: #7367F0;
+    background: -moz-linear-gradient(-45deg, #7367F0 0%, #CE9FFC 100%);
+    background: -webkit-linear-gradient(-45deg, #7367F0 0%,#CE9FFC 100%);
+		/*First page gradient*/
+    background: linear-gradient(135deg, #a9cbe7 0%,#fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7367F0', endColorstr='#CE9FFC',GradientType=1 );
+}
+.bg-white{ background-color: #fff; }
+.bg-grey{ background-color: #f7f7f7;}
+.bg-dark{ background-color: #232323;}
+.bd-top{ border-top: 1px solid #eaeaea;}
+.bd-bottom{ border-bottom: 1px solid #eaeaea;}
+
+.mb-15{ margin-bottom: 15px; }
+.mb-20{ margin-bottom: 20px; }
+.mb-25{ margin-bottom: 25px; }
+.mb-30{ margin-bottom: 30px; }
+.mb-35{ margin-bottom: 35px; }
+.mb-40{ margin-bottom: 40px; }
+.mb-45{ margin-bottom: 45px; }
+.mb-50{ margin-bottom: 50px; }
+.fz-28{ font-size: 28px; }
+.fz-24{ font-size: 24px; }
+.fz-22{ font-size: 22px; }
+.fz-20{ font-size: 20px; }
+.fz-18{ font-size: 18px; }
+.fz-16{ font-size: 16px; }
+.text-black{
+    color: #282828;
+}
+.text-white{
+    color: #ffffff;
+}
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+.fl-right{
+    float: right;
+}
+.fl-left{
+    float: left;
+}
+.display-table{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.container{}
+.overlay{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.overlay:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* Preloader Styles */
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .5s .5s ease;
+    -moz-transition: all .5s .5s ease;
+    transition: all .5s .2s ease;
+}
+.loader{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-top: -30px;
+}
+body.loaded #preloader{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Button Style */
+.button_group{}
+.button_group a{
+    margin: 5px;
+}
+.button_group i{
+    font-size: 26px;
+    margin-right: 5px;
+}
+.app_button{
+    background-color: #d83d43;
+    color: #fff;
+    padding: 0 30px;
+    line-height: 55px;
+    display: inline-block;
+    border-radius: 28px;
+    font-weight: 600;
+    /* box-shadow: 0 0 15px 5px rgba(216, 61, 67, 0.8); */
+}
+.app_button:hover{
+    box-shadow: none;
+		color: #fff;
+    background-color: #ba3438;
+}
+
+/* Transition Effect */
+a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/* Main Wrapper */
+.main_wrapper{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+#pp-nav .pp-tooltip{
+    color: #666;
+}
+
+/* ==========================================================================
+   Menu Style
+   ========================================================================== */
+#sidebar_menu {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    z-index: 99;
+}
+.menu .logo{
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+label {
+    cursor: pointer;
+}
+label:focus {
+    outline: none;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    width: 240px;
+    height: 100%;
+    transform: translate3d(-240px, 0, 0);
+    transition: transform 0.35s;
+}
+.menu label.menu-toggle {
+    background-color: #d83d43;
+    color: #fff;
+    position: absolute;
+    right: -60px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
+.menu ul li a{
+    display: block;
+    padding: 0 30px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #777;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+}
+.menu ul li:first-child a{
+    border-top: 1px solid #ddd;
+}
+.menu ul li a:hover {
+    color: #fff;
+}
+.menu ul li a:before{
+    background-color: #ba3236;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: -100%;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.menu ul li a:hover:before{
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+/* hide inputs */
+.menu-checkbox {
+  display: none;
+}
+/* hide navigation icon for sublabels */
+.menu .menu label.menu-toggle {
+  background: none;
+}
+/* fade in checked menu */
+.menu-checkbox:checked + .menu {
+  transform: translate3d(0, 0, 0);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.hero_section{
+    position: relative;
+}
+.hero_content{
+    color: #fff;
+    padding: 200px 0;
+		background-image: url(../img/BrooklynTheMusical.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+}
+.hero_mock_1{
+    /*background-image: url(../img/BrooklynTheMusical.jpg);*/
+    background-repeat: no-repeat;
+    background-position: 60% center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.hero_mock_2{
+    background-image: url(../img/mockup-2.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -280px;
+    left: 0;
+}
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+.about_section{}
+.about_mock{
+    background-image: url(../img/iPad_TaskMetrics/perspective_right_scaled.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+.about_content{
+    padding: 150px 0;
+    overflow: hidden;
+}
+.about_content .check_list{
+    line-height: 35px;
+}
+.about_content .check_list li{
+    float: left;
+    width: 50%;
+}
+.about_content .check_list li i{
+    color: #42e565;
+    margin-right: 5px;
+}
+
+/* ==========================================================================
+   Feature Section
+   ========================================================================== */
+.feature_section{}
+.feature_wrap{
+    padding: 92px 0;
+}
+.feature_list li{
+    padding: 15px;
+}
+.feature_list li i{
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #e55b5f 0%, #ba3236 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #e55b5f 0%, #ba3236 100%) repeat scroll 0 0;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.feature_list .list_item{
+    padding-left: 70px;
+    position: relative;
+}
+
+/*Circle Style*/
+.feature_list .circle{
+    width: 140px;
+    height: 2px;
+    background-color: #bbb;
+    position: absolute;
+    left: -150px;
+    top: calc(50% - 1px);
+    z-index: 1;
+}
+.feature_list .circle:before{
+    background-color: rgba(255, 255, 255, 0.8);
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    top: -15px;
+    z-index: 1;
+}
+.feature_list .circle:after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    top: -15px;
+    z-index: 1;
+    border: 3px solid #fff;
+    -webkit-animation: circle_zoom 0.8s linear 0.4s infinite;
+    animation: circle_zoom 0.8s linear 0.4s infinite;
+}
+@-webkit-keyframes circle_zoom {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .6
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+@keyframes circle_zoom {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .6
+    }
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+/* ==========================================================================
+   Leadership Section
+   ========================================================================== */
+	 .leadership_items{
+	     margin: 0 auto;
+	 }
+	 .leadership_item{
+	     padding: 15px;
+	     text-align: center;
+	 }
+	 .leadership_item figure{
+	     width: 90px;
+	     height: 90px;
+	     padding: 5px;
+	     margin: 0 auto 15px;
+	     position: relative;
+	 }
+	 .leadership_item figure img{
+	     border-radius: 50px;
+	     width: 100%;
+	 }
+	 .leadership_item h4{
+	     font-weight: 600;
+	     margin: 15px 0 10px;
+	 }
+	 .leadership_item p{}
+
+	 .leadership_items .owl-dots{
+	     display: block;
+	     text-align: center;
+	 }
+	 .leadership_items .owl-dots .owl-dot{
+	     background-color: #bbb;
+	     display: inline-block;
+	     width: 10px;
+	     height: 10px;
+	     -moz-border-radius: 50%;
+	     -webkit-border-radius: 50%;
+	     -o-border-radius: 50%;
+	     border-radius: 50%;
+	     margin: 0 3px;
+	     -webkit-transform: scale(0.6);
+	     transform: scale(0.6);
+	     transition: all 0.5s ease-in-out;
+	 }
+	 .leadership_items .owl-dots .owl-dot.active{
+	     background-color: #777;
+	     transition: all 0.5s ease-in-out;
+	 }
+
+/* ==========================================================================
+   Testimonial Section
+   ========================================================================== */
+.testimonial_items{
+    margin: 0 auto;
+}
+.testimonial_item{
+    padding: 15px;
+    text-align: center;
+}
+.testimonial_item figure{
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    margin: 0 auto 15px;
+    position: relative;
+}
+.testimonial_item figure img{
+    border-radius: 50px;
+    width: 100%;
+}
+.testimonial_item h4{
+    font-weight: 600;
+    margin: 15px 0 10px;
+}
+.testimonial_item p{}
+
+.testimonial_items .owl-dots{
+    display: block;
+    text-align: center;
+}
+.testimonial_items .owl-dots .owl-dot{
+    background-color: #bbb;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 3px;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    transition: all 0.5s ease-in-out;
+}
+.testimonial_items .owl-dots .owl-dot.active{
+    background-color: #777;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ==========================================================================
+   Download Section
+   ========================================================================== */
+.dl_sec .pp-tableCell{ z-index: 1; }
+.download_section{}
+.download_mock{
+    background-image: url(../img/MacBook_Etherscan/MacBook_Etherscan_scaled.png);
+    background-repeat: no-repeat;
+		background-position: 90% center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+}
+.download_content h2{
+    font-size: 32px;
+    color: #444;
+}
+.download_content{
+    color: #444;
+}
+.download_btn img{
+    width: 160px;
+    margin-right: 5px;
+}
+.download_btn a{
+    display: inline-block;
+}
+.download_btn a:hover{
+    box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================================================================
+   Careers Section
+   ========================================================================== */
+.careers_section{}
+.careers_mock{
+    background-image: url(../img/logo_careers.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 170px;
+    left: 0;
+}
+.careers_content{
+    padding: 150px 0;
+    overflow: hidden;
+}
+.careers_content .check_list{
+    line-height: 35px;
+}
+/* Display items in two columns */
+/* .careers_content .check_list li{
+    float: left;
+    width: 50%;
+} */
+.careers_content .check_list li i{
+    color: #42e565;
+    margin-right: 5px;
+}
+
+/* ==========================================================================
+   Subscribe Section
+   ========================================================================== */
+.subscribe_section{}
+
+.subscribe_wrapper{
+}
+.subscribe_wrap{
+    display: block;
+    text-align: center;
+}
+.subscribe_form{
+    display: block;
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+}
+.subscribe_form .form_input{
+    background: none;
+    display: block;
+    color: #777;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 15px;
+    float: left;
+    width: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.subscribe_form .submit{
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #e55b5f 0%, #ba3236 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #e55b5f 0%, #ba3236 100%) repeat scroll 0 0;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 25px;
+    font-weight: 600;
+    float: left;
+    width: 28%;
+    margin-left: 2%;
+    text-transform: uppercase;
+}
+.subscribe_form .submit:hover{
+    box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.25);
+}
+#subscribe-result{
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #f77030;
+}
+#subscribe-result.subs-result{
+    display: block;
+}
+.subscription-success,
+.subscription-error{
+    color: #777;
+}
+.social_link{
+    text-align: center;
+}
+.social_link li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.social_link li a{
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #e55b5f 0%, #ba3236 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #e55b5f 0%, #ba3236 100%) repeat scroll 0 0;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+}
+.social_link li a:hover{
+    box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.25);
+}
+.footer_box{
+    margin-top: 30px;
+}
