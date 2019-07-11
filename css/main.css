@@ -45,11 +45,11 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 1.2;
     margin: 0 0 10px;
     color: #fff;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.05em;
 }
 h2{
     font-size: 20px;
@@ -247,10 +247,10 @@ body.loaded #preloader{
     background-color: #849ad1;
     color: #fff;
     padding: 0 30px;
-    line-height: 55px;
+    line-height: 35px;
     display: inline-block;
-    border-radius: 18px;
-    font-weight: 600;
+    border-radius: 15px;
+    font-weight: 450;
     /* box-shadow: 0 0 15px 5px rgba(216, 61, 67, 0.8); */
 }
 .app_button:hover{
