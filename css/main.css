@@ -390,12 +390,12 @@ label:focus {
 .hero_content{
     color: #fff;
     padding: 200px 0;
-		background-image: url(../img/BrooklynTheMusical.jpg);
+		background-image: url(../img/BrooklynTheMusical.JPG);
 		background-size: cover;
 		background-repeat: no-repeat;
 }
 .hero_mock_1{
-    /*background-image: url(../img/BrooklynTheMusical.jpg);*/
+    /*background-image: url(../img/BrooklynTheMusical.JPG);*/
     background-repeat: no-repeat;
     background-position: 60% center;
     width: 100%;
